@@ -7,9 +7,13 @@
   "extends": [
     "airbnb-base",
     "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
   ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2018,
@@ -18,17 +22,16 @@
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": "error",
+    "@typescript-eslint/camelcase": "off",
+    "import/no-unresolved": "off",
     "no-useless-constructor": "off",
-    "no-unused-vars": "off",
-    "camelcase": "off",
-    "no-param-reassign": "off",
+    "class-methods-use-this": "off",
     "@typescript-eslint/no-unused-vars": [
-      "warn",
+      "error",
       {
-        "argsIgnorePattern": "^_"
+        "argsIgnorePattern": "_"
       }
     ],
-    "class-methods-use-this": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
