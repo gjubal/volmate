@@ -42,7 +42,7 @@ export const Profile = styled.div`
 
     a {
       text-decoration: none;
-      color: #69cf9c;
+      color: #8257e5;
 
       &:hover {
         opacity: 0.8;

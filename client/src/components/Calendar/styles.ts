@@ -40,7 +40,7 @@ export const WeekGrid = styled.section`
 export const DayColumn = styled.div`
   h3 {
     width: 80%;
-    border-bottom: 1px solid #69cf9c;
+    border-bottom: 1px solid #8257e5;
   }
 `;
 

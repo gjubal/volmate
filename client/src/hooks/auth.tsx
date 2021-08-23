@@ -4,7 +4,6 @@ import api from '../services/api';
 
 interface User {
   id: string;
-  avatar_url: string;
   name: string;
   email: string;
 }
@@ -30,8 +29,8 @@ const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 
 const AuthProvider: React.FC = ({ children }) => {
   const [data, setData] = useState<AuthState>(() => {
-    const token = localStorage.getItem('@Agendo:token');
-    const user = localStorage.getItem('@Agendo:user');
+    const token = localStorage.getItem('@Volmate:token');
+    const user = localStorage.getItem('@Volmate:user');
 
     if (token && user) {
       api.defaults.headers.authorization = `Bearer ${token}`;
@@ -50,22 +49,22 @@ const AuthProvider: React.FC = ({ children }) => {
 
     const { token, user } = response.data;
 
-    localStorage.setItem('@Agendo:token', token);
-    localStorage.setItem('@Agendo:user', JSON.stringify(user));
+    localStorage.setItem('@Volmate:token', token);
+    localStorage.setItem('@Volmate:user', JSON.stringify(user));
 
     setData({ token, user });
   }, []);
 
   const signOut = useCallback(() => {
-    localStorage.removeItem('@Agendo:token');
-    localStorage.removeItem('@Agendo:user');
+    localStorage.removeItem('@Volmate:token');
+    localStorage.removeItem('@Volmate:user');
 
     setData({} as AuthState);
   }, []);
 
   const updateUser = useCallback(
     (user: User) => {
-      localStorage.setItem('@Agendo:user', JSON.stringify(user));
+      localStorage.setItem('@Volmate:user', JSON.stringify(user));
 
       setData({
         token: data.token,

@@ -18,11 +18,11 @@ const Radio: React.FC<RadioProps> = ({ name, label, ...rest }) => {
   return (
     <Container>
       <div>
-        {name === 'store' && <FiShoppingCart color="#69cf9c" size={30} />}
-        {name === 'office' && <FiBriefcase color="#69cf9c" size={30} />}
-        {name === 'restaurant' && <FiCoffee color="#69cf9c" size={30} />}
-        {name === 'morning' && <FiSun color="#69cf9c" size={30} />}
-        {name === 'night' && <FiMoon color="#69cf9c" size={30} />}
+        {name === 'store' && <FiShoppingCart color="#8257E5" size={30} />}
+        {name === 'office' && <FiBriefcase color="#8257E5" size={30} />}
+        {name === 'restaurant' && <FiCoffee color="#8257E5" size={30} />}
+        {name === 'morning' && <FiSun color="#8257E5" size={30} />}
+        {name === 'night' && <FiMoon color="#8257E5" size={30} />}
         <input type="radio" id={name} {...rest} />
       </div>
 

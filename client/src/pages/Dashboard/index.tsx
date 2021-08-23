@@ -28,7 +28,11 @@ const Dashboard: React.FC = () => {
           <strong>What`s next?</strong>
 
           <Link to="/dashboard/volunteers">
-            <Button>Add a volunteer</Button>
+            <Button>Manage volunteers</Button>
+          </Link>
+
+          <Link to="/dashboard/opportunities">
+            <Button>Manage opportunities</Button>
           </Link>
         </Section>
       </Content>

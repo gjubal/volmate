@@ -23,11 +23,11 @@ const Sidebar: React.FC<AuthProps> = ({ signOut }) => {
             <FiHome />
           </Link>
 
-          <Link to="/dashboard">
+          <Link to="/dashboard/volunteers">
             <FiBriefcase />
           </Link>
 
-          <Link to="/dashboard">
+          <Link to="/dashboard/opportunities">
             <FiClipboard />
           </Link>
         </div>

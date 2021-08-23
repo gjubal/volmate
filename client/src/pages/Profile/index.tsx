@@ -126,7 +126,7 @@ const Profile: React.FC = () => {
           }}
           onSubmit={handleSubmit}
         >
-          <h1>My profile</h1>
+          <h1>My admin profile</h1>
 
           <Input name="name" icon={FiUser} placeholder="Name" />
 

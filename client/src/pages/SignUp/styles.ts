@@ -56,7 +56,7 @@ export const AnimationContainer = styled.div`
     }
   }
   > a {
-    color: #69CF9C;
+    color: #8257E5;
     display: block;
     margin-top: 24px;
     text-decoration: none;
@@ -67,7 +67,7 @@ export const AnimationContainer = styled.div`
       margin-right: 16px;
     }
     &:hover {
-      color: ${shade(0.2, '#69CF9C')};
+      color: ${shade(0.2, '#8257E5')};
     }
 `;
 

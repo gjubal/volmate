@@ -2,7 +2,7 @@ import { shade } from 'polished';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: #69cf9c;
+  background-color: #8257e5;
   width: 96px;
   height: 100%;
   position: absolute;
